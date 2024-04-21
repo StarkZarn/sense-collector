@@ -1,6 +1,6 @@
-FROM grafana/promtail:2.2.1
+FROM grafana/promtail:main
 
-RUN apt-get update && apt-get install -y bc curl dumb-init bash python procps coreutils sysstat vim net-tools
+RUN apt-get update && apt-get install -y bc curl dumb-init bash python3 procps coreutils sysstat vim net-tools
 
 RUN mkdir /sense-collector
 
